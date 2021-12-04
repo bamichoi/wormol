@@ -3,6 +3,7 @@ const coverImgs = document.getElementsByClassName("cover_img");
 const coverImg = document.querySelector(".cover_img");
 const imgLen = coverImgs.length;
 const menu = document.querySelector(".nav__menu");
+const body = document.querySelector("body");
 
 
 let pos = 0;
@@ -31,6 +32,7 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
+    body.addEventListener("click", handleMouseOut)
     
 }
 
