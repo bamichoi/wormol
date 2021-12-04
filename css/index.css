@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   font-family: "futura", sans-serif;
 }
 .cover_img_box {
@@ -12,7 +13,6 @@ body {
   padding-top: 50%;
   position: relative;
   width: 50%;
-  bottom: -11.3rem;
 }
 .cover_img {
   position: absolute;
