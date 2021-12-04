@@ -32,7 +32,7 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    body.addEventListener("click", handleMouseOut)
+    body.addEventListener("touchend", handleMouseOut)
     
 }
 
