@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  top: 24rem;
+  bottom: 11.3rem;
 }
 
 .nav__title {
