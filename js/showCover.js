@@ -17,10 +17,8 @@ const handleMouseOver = () => {
     const changeImg = () => setInterval( () => {
         changeImgIsRunning = true;
         coverImgs[pos].style.opacity = 0;
-        console.log(coverImgs[pos], pos)
         pos = (pos + 1) % imgLen;
         coverImgs[pos].style.opacity = 1;
-        console.log(coverImgs[pos], pos)
     }, 1500)
 
     id = changeImg();
@@ -28,7 +26,7 @@ const handleMouseOver = () => {
     const handleMouseOut = () => {
         menu.style.opacity = 1;
         coverImgs[pos].style.opacity = 0;
-        window.clearInterval(id)
+        clearInterval(id)
     }
 
     title.addEventListener("mouseout", handleMouseOut);
@@ -38,7 +36,7 @@ const handleMouseOver = () => {
 
 const handleClick = () => {
     if ( changeImgIsRunning == true ){
-        window.clearInterval(id);
+        clearInterval(id);
         changeImgIsRunning = false;
     }
     else {

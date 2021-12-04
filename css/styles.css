@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: "futura";
-  src: url("../font/webfont.eot");
-  src: url("../font/webfont.woff") format("woff"),
-    url("../font/webfont.tff") format("tff");
+  src: url("../font/Futura.eot");
+  src: url("../font/Futura.woff") format("woff"),
+    url("../font/Futura.tff") format("tff");
 }
