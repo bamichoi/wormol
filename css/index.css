@@ -1,0 +1,95 @@
+body {
+  background-color: #1300ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "futura", sans-serif;
+}
+
+.nav_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 24rem;
+}
+
+.nav__title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.cover_img_box {
+  height: 0;
+  overflow: hidden;
+  padding-top: 50%;
+  position: relative;
+  width: 50%;
+}
+.cover_img {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity ease-in-out 0.5s;
+}
+
+.nav__menu {
+  transition: opacity ease-in-out 0.5s;
+}
+
+.nav__menu li {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.45rem;
+  font-weight: 300;
+}
+
+.nav__menu a {
+  color: black;
+}
+
+.nav__menu a:hover {
+  color: #1300ff;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  color: #1300ff;
+}
+
+.select_lang {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+}
+
+.select_lang button {
+  font-family: "futura", sans-serif;
+  border: none;
+  background-color: #1300ff;
+}
+.select_lang button:hover {
+  color: white;
+  cursor: pointer;
+}

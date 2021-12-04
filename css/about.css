@@ -1,0 +1,26 @@
+.about__title {
+  width: 100%;
+  font-size: 1.27rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.about__title a:hover {
+  color: white;
+}
+
+.about__title a {
+  text-decoration: none;
+  color: black;
+  font-family: "futura", sans-serif;
+}
+
+.about_page {
+  justify-content: flex-start;
+}
+
+.about__content {
+  margin-top: 2rem;
+}

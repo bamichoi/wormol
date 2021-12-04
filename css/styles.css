@@ -1,0 +1,11 @@
+@import "./reset.css";
+@import "./index.css";
+@import "./holygrain.css";
+@import "./about.css";
+
+@font-face {
+  font-family: "futura";
+  src: url("../font/webfont.eot");
+  src: url("../font/webfont.woff") format("woff"),
+    url("../font/webfont.tff") format("tff");
+}
