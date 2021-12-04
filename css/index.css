@@ -4,7 +4,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   font-family: "futura", sans-serif;
 }
 .cover_img_box {
@@ -13,6 +12,7 @@ body {
   padding-top: 50%;
   position: relative;
   width: 50%;
+  bottom: -11.3rem;
 }
 .cover_img {
   position: absolute;
@@ -70,7 +70,7 @@ footer {
 footer a {
   text-decoration: none;
   color: black;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 footer a:hover {
