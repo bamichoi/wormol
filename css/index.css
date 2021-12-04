@@ -5,6 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: "futura", sans-serif;
+  height: 100vh;
 }
 .wrapper {
   width: 100%;
@@ -24,8 +25,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  bottom: 0;
-  left: 0;
 }
 .cover_img {
   position: absolute;
@@ -35,7 +34,6 @@ body {
   height: 100%;
   opacity: 0;
   transition: opacity ease-in-out 0.5s;
-  margin-top: 3%;
 }
 
 .nav_container {
