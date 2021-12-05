@@ -37,7 +37,7 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    body.addEventListener("touchstart", handleMouseOut)
+    body.addEventListener("click", handleMouseOut)
     
 }
 
@@ -54,6 +54,9 @@ const handleClick = () => {
 
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("ontouch", handleMouseOver);
+title.addEventListener("mousedown", handleClick);
+title.addEventListener("mouseup", handleClick); // 팝업설명부착
 
-//title.addEventListener("click", handleClick);
+title.addEventListener("click", handleMouseOver);
+
+
