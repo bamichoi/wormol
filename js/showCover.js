@@ -25,7 +25,6 @@ const handleMouseOver = (e) => {
     
         id = changeImg();
     }
-    body.addEventListener("touchend", handleMouseOut);
     
 }
 
