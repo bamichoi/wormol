@@ -26,10 +26,6 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .cover_img_box {
-    height: 100vh;
-    width: 100vh;
-  }
   .cover_img {
     width: 85vw;
     height: 85vw;
