@@ -37,7 +37,7 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    title.addEventListener("ontouch", handleMouseOut);
+    title.addEventListener("touchstart", handleMouseOut);
     body.addEventListener("touchend", handleMouseOut);
     
 }
