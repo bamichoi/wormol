@@ -31,13 +31,13 @@ const handleMouseOver = () => {
             coverImgs[pos].style.opacity = 0;
             changeImgIsRunning = false
             clearInterval(id)
-            location.reload();
+
         }
         
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    body.addEventListener("click", handleMouseOut)
+    body.addEventListener("ontouch", handleMouseOut)
     
 }
 
@@ -57,6 +57,6 @@ title.addEventListener("mouseover", handleMouseOver);
 title.addEventListener("mousedown", handleClick);
 title.addEventListener("mouseup", handleClick); // 팝업설명부착
 
-title.addEventListener("click", handleMouseOver);
+title.addEventListener("ontouch", handleMouseOver);
 
 
