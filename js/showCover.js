@@ -37,24 +37,28 @@ const handleMouseOver = () => {
         
     }
 
+    const handleClick = () => {
+        if ( changeImgIsRunning == true ){
+            clearInterval(id);
+            changeImgIsRunning = false;
+        }
+        else {
+            handleMouseOver();
+        }
+    
+    }
+
     title.addEventListener("mouseout", handleMouseOut);
+    title.addEventListener("touchstart", handleClick)
+    title.addEventListener("click", handleClick)
+
     body.addEventListener("touchend", handleMouseOut)
     
 }
 
-const handleClick = () => {
-    if ( changeImgIsRunning == true ){
-        clearInterval(id);
-        changeImgIsRunning = false;
-    }
-    else {
-        handleMouseOver();
-    }
 
-}
 
 
 title.addEventListener("mouseover", handleMouseOver);
 title.addEventListener("ontouch", handleClick);
-title.addEventListener("click", handleClick)
-title.addEventListener("touchstart", handleClick)
+
