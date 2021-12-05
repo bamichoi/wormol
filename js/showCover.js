@@ -14,6 +14,7 @@ const handleMouseOver = () => {
     coverImgs[pos].style.opacity = 1;
     menu.style.opacity = 0;
 
+    clearInterval();
     if (changeImgIsRunning == false) {
         changeImgIsRunning = true;
         const changeImg = () => setInterval( () => {
@@ -31,13 +32,13 @@ const handleMouseOver = () => {
             coverImgs[pos].style.opacity = 0;
             changeImgIsRunning = false
             clearInterval(id)
+            location.reload();
         }
         
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    title.addEventListener("ontouch", handleMouseOut);
-    body.addEventListener("ontouch", handleMouseOut)
+    body.addEventListener("touchend", handleMouseOut)
     
 }
 
@@ -55,4 +56,5 @@ const handleClick = () => {
 
 title.addEventListener("mouseover", handleMouseOver);
 title.addEventListener("ontouch", handleClick);
-title.addEventListener("click", handleClick);
+title.addEventListener("click", handleClick)
+title.addEventListener("touchstart", handleClick)
