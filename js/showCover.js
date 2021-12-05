@@ -37,17 +37,6 @@ const handleMouseOver = () => {
     
 }
 
-const handleClick = () => {
-    if ( changeImgIsRunning == true ){
-        clearInterval(id);
-        changeImgIsRunning = false;
-    }
-    else {
-        handleMouseOver();
-    }
-
-}
 
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("click", handleClick)
