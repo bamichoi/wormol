@@ -14,22 +14,29 @@ const handleMouseOver = () => {
     coverImgs[pos].style.opacity = 1;
     menu.style.opacity = 0;
 
-    const changeImg = () => setInterval( () => {
+    clearInterval();
+    if (changeImgIsRunning == false) {
         changeImgIsRunning = true;
-        coverImgs[pos].style.opacity = 0;
-        pos = (pos + 1) % imgLen;
-        coverImgs[pos].style.opacity = 1;
-    }, 1500)
-
-    id = changeImg();
-
+        const changeImg = () => setInterval( () => {
+            coverImgs[pos].style.opacity = 0;
+            pos = (pos + 1) % imgLen;
+            coverImgs[pos].style.opacity = 1;
+        }, 1500)
+    
+        id = changeImg();
+    }
+    
     const handleMouseOut = () => {
-        menu.style.opacity = 1;
-        coverImgs[pos].style.opacity = 0;
-        clearInterval(id)
+        if (changeImgIsRunning == true) {
+            menu.style.opacity = 1;
+            coverImgs[pos].style.opacity = 0;
+            changeImgIsRunning = false
+            clearInterval(id)
+        }
+        
     }
 
-    title.addEventListener("mouseout", handleMouseOut);
+    title.addEventListener("mouseout touchend", handleMouseOut);
     body.addEventListener("touchstart", handleMouseOut)
     
 }
@@ -46,5 +53,5 @@ const handleClick = () => {
 }
 
 
-title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("click", handleClick)
+title.addEventListener("mouseover touchstart", handleMouseOver);
+//title.addEventListener("click", handleClick)
