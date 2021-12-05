@@ -55,5 +55,5 @@ const handleClick = () => {
 
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("ontouch", handleMouseOver);
+title.addEventListener("ontouch", handleClick);
 //title.addEventListener("click", handleClick)
