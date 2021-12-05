@@ -49,10 +49,10 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    title.addEventListener("touchend", handleClick)
+    title.addEventListener("touchend", handleClick, false)
     title.addEventListener("click", handleClick)
 
-    body.addEventListener("touchend", handleMouseOut)
+    body.addEventListener("touchend", handleMouseOut, false)
     
 }
 
@@ -60,5 +60,5 @@ const handleMouseOver = () => {
 
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("ontouch", handleClick);
+title.addEventListener("ontouch", handleMouseOver, false);
 
