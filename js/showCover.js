@@ -10,7 +10,9 @@ let pos = 0;
 let changeImgIsRunning = false;
 let id = null;
 
-const handleMouseOver = () => {
+const handleMouseOver = (e) => {
+    
+    console.log(e);
     coverImgs[pos].style.opacity = 1;
     menu.style.opacity = 0;
 
@@ -25,7 +27,8 @@ const handleMouseOver = () => {
         id = changeImg();
     }
     
-    const handleMouseOut = () => {
+    const handleMouseOut = (e) => {
+        console.log(e);
         if (changeImgIsRunning == true) {
             menu.style.opacity = 1;
             coverImgs[pos].style.opacity = 0;
@@ -37,12 +40,12 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    title.addEventListener("touchstart", handleMouseOut);
     body.addEventListener("touchend", handleMouseOut);
     
 }
 
-const handleClick = () => {
+const handleClick = (e) => {
+    console.log(e);
     if ( changeImgIsRunning == true ){
         clearInterval(id);
         changeImgIsRunning = false;
@@ -55,9 +58,5 @@ const handleClick = () => {
 
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("mousedown", handleClick);
-title.addEventListener("mouseup", handleClick); // 팝업설명부착
-
-title.addEventListener("ontouch", handleMouseOver);
 
 
