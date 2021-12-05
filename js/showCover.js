@@ -38,4 +38,4 @@ const handleMouseOver = () => {
 }
 
 title.addEventListener("mouseover", handleMouseOver);
-title.addEventListener("touchstart", handleMouseOver);
+title.addEventListener("touch", handleMouseOver);
