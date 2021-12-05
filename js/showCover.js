@@ -11,7 +11,7 @@ let changeImgIsRunning = false;
 let id = null;
 
 const handleMouseOver = (e) => {
-
+    title.removeEventListener("touchend", handleMouseOver);
     console.log(e.type);
     coverImgs[pos].style.opacity = 1;
     menu.style.opacity = 0;
@@ -23,10 +23,8 @@ const handleMouseOver = (e) => {
             pos = (pos + 1) % imgLen;
             coverImgs[pos].style.opacity = 1;
         }, 1500)
-    
         id = changeImg();
     }
-
 
     const handleMouseOut = (e) => {
         console.log(e.type);
@@ -35,15 +33,12 @@ const handleMouseOver = (e) => {
             coverImgs[pos].style.opacity = 0;
             changeImgIsRunning = false
             clearInterval(id)
+            title.addEventListener("touchend", handleMouseOver);
         }
     }
-    
     title.addEventListener("mouseout", handleMouseOut);
-
-
+    title.addEventListener("touchend", handleMouseOut);
 }
-
-
 
 const handleClick = (e) => {
     console.log(e.type);
@@ -59,3 +54,4 @@ const handleClick = (e) => {
 
 
 title.addEventListener("mouseover", handleMouseOver);
+title.addEventListener("touchend", handleMouseOver);
