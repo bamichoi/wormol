@@ -14,7 +14,6 @@ const handleMouseOver = () => {
     coverImgs[pos].style.opacity = 1;
     menu.style.opacity = 0;
 
-    clearInterval();
     if (changeImgIsRunning == false) {
         changeImgIsRunning = true;
         const changeImg = () => setInterval( () => {
@@ -37,7 +36,8 @@ const handleMouseOver = () => {
     }
 
     title.addEventListener("mouseout", handleMouseOut);
-    body.addEventListener("touchend", handleMouseOut)
+    title.addEventListener("ontouch", handleMouseOut);
+    body.addEventListener("ontouch", handleMouseOut)
     
 }
 
@@ -55,4 +55,4 @@ const handleClick = () => {
 
 title.addEventListener("mouseover", handleMouseOver);
 title.addEventListener("ontouch", handleClick);
-//title.addEventListener("click", handleClick)
+title.addEventListener("click", handleClick);
