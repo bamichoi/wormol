@@ -32,6 +32,7 @@ const handleMouseOver = () => {
             coverImgs[pos].style.opacity = 0;
             changeImgIsRunning = false
             clearInterval(id)
+            location.reload();
         }
         
     }
