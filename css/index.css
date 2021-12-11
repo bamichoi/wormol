@@ -6,7 +6,7 @@ body {
   justify-content: space-between;
   font-family: "futura", sans-serif;
   width: 100%;
-  max-width: auto;
+  height: 100%;
 }
 * {
   box-sizing: border-box;
