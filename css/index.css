@@ -5,8 +5,7 @@ body {
   align-items: center;
   justify-content: space-between;
   font-family: "futura", sans-serif;
-  box-sizing: border-box;
-  -webkit-bleedingedgethingy: 1;
+  height: calc(100vh - calc(100vh - 100%));
 }
 
 .wrapper {
