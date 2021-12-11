@@ -1,12 +1,12 @@
 body {
   background-color: #1300ff;
-  overflow-x: scroll !important;
-  overflow-y: hidden !important;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "futura", sans-serif;
+  width: 100%;
+  height: 100%;
 }
 .wrapper {
   position: relative;
@@ -33,13 +33,13 @@ body {
   opacity: 0;
   position: absolute;
   bottom: 0rem;
+  transition: opacity ease-in-out 0.5s;
 }
-
 @media screen and (max-width: 600px) {
   .cover_img {
     width: 85vw;
     height: 85vw;
-    bottom: 9rem;
+    bottom: 10rem;
   }
 }
 .nav_container {
@@ -47,7 +47,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 9rem;
+  bottom: 8rem;
 }
 
 .nav__title {
