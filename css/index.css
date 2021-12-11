@@ -37,7 +37,7 @@ body {
   .cover_img {
     width: 85vw;
     height: 85vw;
-    bottom: 10rem;
+    bottom: 9rem;
   }
 }
 .nav_container {
@@ -45,7 +45,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 10rem;
+  bottom: 9rem;
 }
 
 .nav__title {
