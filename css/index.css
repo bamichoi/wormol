@@ -5,8 +5,11 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "futura", sans-serif;
+  min-height: -webkit-fill-available;
 }
-
+* {
+  box-sizing: border-box;
+}
 .wrapper {
   position: relative;
   display: flex;
@@ -15,7 +18,6 @@ body {
   height: 85vh;
   width: 85vh;
   margin-top: 3rem;
-  box-sizing: border-box;
 }
 .cover_img_box {
   position: relative;
