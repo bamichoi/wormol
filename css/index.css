@@ -6,7 +6,6 @@ body {
   justify-content: center;
   font-family: "futura", sans-serif;
   width: 100%;
-  height: 100vh;
 }
 .wrapper {
   position: relative;
@@ -27,8 +26,8 @@ body {
   align-items: center;
 }
 .cover_img {
-  width: 85vh;
-  height: 85vh;
+  width: 80vh;
+  height: 80vh;
   opacity: 0;
   position: absolute;
   bottom: 0rem;
