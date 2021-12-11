@@ -55,7 +55,7 @@ body {
   flex-direction: column;
   align-items: center;
   position: absolute;
-  bottom: 11rem;
+  bottom: 10rem;
 }
 
 .nav__title {
