@@ -18,15 +18,13 @@ body {
   box-sizing: border-box;
 }
 .wrapper {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  width: 85vh;
+  height: 100%;
+  width: 100%;
 }
 .cover_img_box {
-  position: relative;
   width: 100%;
   height: 100%;
   top: 0;
@@ -40,8 +38,8 @@ body {
   height: 85vh;
   opacity: 0;
   position: absolute;
-  bottom: 0rem;
 }
+
 @media screen and (max-width: 600px) {
   .cover_img {
     width: 85vw;
