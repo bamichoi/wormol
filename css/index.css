@@ -5,6 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "futura", sans-serif;
+  position: relative;
 }
 .wrapper {
   position: relative;
