@@ -16,6 +16,8 @@ body {
   align-items: center;
   height: 85vh;
   width: 85vh;
+  margin-top: 3rem;
+  box-sizing: border-box;
 }
 .cover_img_box {
   position: relative;
