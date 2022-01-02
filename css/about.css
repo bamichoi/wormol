@@ -21,6 +21,17 @@
   justify-content: flex-start;
 }
 
+.select_lang button:nth-child(2) {
+  color: white;
+}
+
 .about__content {
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.en {
+  display: none;
 }
