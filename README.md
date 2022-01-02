@@ -3,9 +3,11 @@
 the Homepage of music artist Wormol
 
 
-# ToDo List 12.11 
+# ToDo List 12.12
 
-- [x] sound cloud add target="_blanck"
-- [x] Put Wormol title in center
-- [x] Scroll disactivate
-- [x] Remove fade in the Gallery
+- [ ] change scale issue
+- [ ] add alt info
+- [ ] about에 사진추가
+- [ ] About 텍스트 센터정렬
+- [ ] about에 it/eg 추가
+- [ ] android 용 favicon

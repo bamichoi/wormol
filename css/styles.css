@@ -9,3 +9,8 @@
   src: url("../font/Futura.woff") format("woff"),
     url("../font/Futura.tff") format("tff");
 }
+
+video {
+  width: 1200px;
+  height: 500px;
+}
