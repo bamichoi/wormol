@@ -25,11 +25,18 @@
   color: white;
 }
 
+.selfie {
+  width: 80%;
+  margin-top: 0.5rem;
+}
+
 .about__content {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  width: 80%;
 }
 
 .en {
