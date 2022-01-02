@@ -82,7 +82,8 @@ body {
 footer {
   display: block;
   position: absolute;
-  bottom: 0.5rem;
+  bottom: 0;
+  padding: 0.5rem;
   font-size: 0.8rem;
 }
 footer a {
