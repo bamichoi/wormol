@@ -94,6 +94,24 @@ footer a {
 footer a:hover {
   color: #1300ff;
 }
+
+footer::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+footer::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+footer::-webkit-scrollbar,
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
 .select_lang {
   position: absolute;
   top: 1rem;
