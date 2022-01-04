@@ -7,7 +7,6 @@ let currentLang = "it";
 
 const toggleLang = (e) => {
     const { value } = e.target;
-    console.log(value)
     if (currentLang == value ) {
         return
     }

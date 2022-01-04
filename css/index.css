@@ -102,6 +102,10 @@ footer a:hover {
   height: 12px;
 }
 
+.tidal_img:hover {
+  color: #1300ff;
+}
+
 .select_lang {
   position: absolute;
   top: 1rem;
