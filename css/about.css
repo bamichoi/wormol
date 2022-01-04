@@ -35,8 +35,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  width: 80%;
+  text-align: justify-all;
+  max-width: 40vh;
 }
 
 .en {
