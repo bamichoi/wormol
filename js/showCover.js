@@ -4,7 +4,8 @@ const coverImg = document.querySelector(".cover_img");
 const imgLen = coverImgs.length;
 const menu = document.querySelector(".nav__menu");
 const body = document.querySelector("body");
-
+const wrapper = document.querySelector(".wrapper");
+// wrapper.style.height = window.innerHeight + 'px';
 
 let pos = 0;
 let changeImgIsRunning = false;
@@ -55,3 +56,7 @@ const handleClick = (e) => {
 
 title.addEventListener("mouseover", handleMouseOver);
 title.addEventListener("touchend", handleMouseOver);
+
+// wrapper.addEventListener('touchmove', function(evt) {
+//     evt.preventDefault();
+// });
