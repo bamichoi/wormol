@@ -19,6 +19,7 @@ body {
   box-sizing: border-box;
 }
 .wrapper {
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
