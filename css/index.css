@@ -2,7 +2,6 @@ html,
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  position: fixed;
 }
 body {
   background-color: #1300ff;
@@ -19,7 +18,6 @@ body {
   box-sizing: border-box;
 }
 .wrapper {
-  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
