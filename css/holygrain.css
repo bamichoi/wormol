@@ -1,3 +1,7 @@
+.holygrain_page {
+  overflow-y: scroll;
+}
+
 .holygrain__title {
   width: 100%;
   font-size: 1.27rem;
@@ -12,6 +16,7 @@
 }
 
 .holygrain__title a {
+  margin-bottom: 1rem;
   text-decoration: none;
   color: black;
   font-family: "futura", sans-serif;
@@ -21,17 +26,59 @@
   justify-content: flex-start;
 }
 
+.year {
+  margin-bottom: 0.5rem;
+}
+.vertical__video {
+  height: 0;
+  overflow: hidden;
+  padding-top: calc(459 / 1080 * 315%);
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .holygrain__video {
+  height: 0;
+  overflow: hidden;
+  padding-top: calc(359 / 1080 * 100%);
+  position: relative;
+  width: 75%;
+  margin-bottom: 7%;
+}
+
+.video_small {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small__video {
   height: 0;
   overflow: hidden;
   padding-top: calc(459 / 1080 * 100%);
   position: relative;
   width: 75%;
+  margin-bottom: 2rem;
 }
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-  height: 100%;
+
+.first_sm_video {
+  left: -18%;
+  width: 80%;
+  height: 80%;
+}
+
+.second_sm_video {
+  left: 38%;
+  width: 80%;
+  height: 80%;
 }
