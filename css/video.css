@@ -26,59 +26,93 @@
   justify-content: flex-start;
 }
 
-.year {
-  margin-bottom: 0.5rem;
-}
-.vertical__video {
-  height: 0;
-  overflow: hidden;
-  padding-top: calc(459 / 1080 * 315%);
-  position: relative;
-  width: 100%;
+.video_grid_1 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(5, 7.8rem);
+  grid-template-rows: repeat(1, 14rem);
   margin-bottom: 1rem;
 }
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.video_grid_2 {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(6, 6.3rem);
+  grid-template-rows: repeat(3, 7rem);
+}
+
+.video {
   width: 100%;
   height: 100%;
 }
 
-.holygrain__video {
-  height: 0;
-  overflow: hidden;
-  padding-top: calc(359 / 1080 * 100%);
-  position: relative;
-  width: 75%;
-  margin-bottom: 7%;
-}
-
-.video_small {
+iframe {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100%;
 }
 
-.small__video {
-  height: 0;
-  overflow: hidden;
-  padding-top: calc(459 / 1080 * 100%);
-  position: relative;
-  width: 75%;
-  margin-bottom: 2rem;
+.immobile {
+  grid-column: 1 / 1;
 }
 
-.first_sm_video {
-  left: -18%;
-  width: 80%;
-  height: 80%;
+.holygrain {
+  width: 100%;
+  grid-column: 2 / span 4;
 }
 
-.second_sm_video {
-  left: 38%;
-  width: 80%;
-  height: 80%;
+.suoni {
+  grid-column: 1 / span 3;
+  grid-row: 1 / span 3;
+}
+
+.ena {
+  grid-column: 4 / span 3;
+  grid-row: 1 / span 3;
+}
+
+@media screen and (max-width: 600px) {
+  .video_grid_1 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 19rem);
+    grid-template-rows: repeat(5, 7.8rem);
+  }
+
+  .video_grid_2 {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(1, 19rem);
+    grid-template-rows: repeat(2, 19rem);
+  }
+
+  .video {
+    width: 100%;
+    height: 100%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  .immobile {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+  }
+
+  .holygrain {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .suoni {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .ena {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
