@@ -84,6 +84,7 @@ iframe {
     grid-gap: 1rem;
     grid-template-columns: repeat(1, 19rem);
     grid-template-rows: repeat(2, 19rem);
+    padding-bottom: 10rem;
   }
 
   .video {
