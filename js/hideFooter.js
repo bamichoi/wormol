@@ -3,14 +3,12 @@ const footer = document.getElementById("footer");
 let timer = null;
 
 const hideFooter = () => {
-  footer.style.visibility = "hidden";
-  footer.style.opacity = 0;
+  footer.style.bottom = "-2rem";
   if (timer !== null) {
     clearTimeout(timer);
   }
   timer = setTimeout(() => {
-    footer.style.visibility = "visible";
-    footer.style.opacity = 1;
+    footer.style.bottom = "0.6rem";
   }, 150);
 };
 
