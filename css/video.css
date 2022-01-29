@@ -39,6 +39,7 @@
   grid-gap: 1rem;
   grid-template-columns: repeat(6, 6.3rem);
   grid-template-rows: repeat(3, 7rem);
+  margin-bottom: 10rem;
 }
 
 .video {
