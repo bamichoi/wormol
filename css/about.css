@@ -39,6 +39,7 @@
   height: 40vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: auto;
 }
 
 .ita {
