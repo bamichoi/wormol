@@ -31,12 +31,12 @@
 }
 
 .about__content p {
-  margin-top: 10px;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
   text-align: justify-all;
-  width: 44vh;
-  overflow: scroll;
+  width: 42vh;
+  overflow-y: scroll;
 }
 
 .ita {
