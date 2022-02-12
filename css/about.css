@@ -30,13 +30,14 @@
   margin-top: 0.5rem;
 }
 
-.about__content p {
-  margin-top: 2rem;
+.about__content {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   text-align: justify-all;
   width: 42vh;
-  height: 50vh;
+  height: 40vh;
+  overflow-y: auto;
 }
 
 .ita {
