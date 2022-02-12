@@ -30,11 +30,12 @@
   margin-top: 0.5rem;
 }
 
-.about__content {
-  margin-top: 15px;
+.about__content p {
+  margin-top: 12px;
   display: flex;
   justify-content: center;
   text-align: justify-all;
+  word-wrap: break-word;
   width: 44vh;
 }
 
