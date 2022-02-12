@@ -36,10 +36,10 @@
   justify-content: center;
   text-align: justify-all;
   width: 42vh;
-  height: 40vh;
+  height: 30vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
+  -webkit-overflow-scrolling: auto;
 }
 
 .ita {
