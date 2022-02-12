@@ -37,9 +37,8 @@
   text-align: justify-all;
   width: 42vh;
   height: 40vh;
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
-  -webkit-overflow-scrolling: auto;
 }
 
 .ita {
