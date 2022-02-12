@@ -31,11 +31,11 @@
 }
 
 .about__content {
-  margin-top: 10px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   text-align: justify-all;
-  width: 46vh;
+  width: 44vh;
 }
 
 .ita {
