@@ -36,8 +36,9 @@
   justify-content: center;
   text-align: justify-all;
   width: 42vh;
-  height: 40vh;
-  overflow-y: auto;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .ita {
