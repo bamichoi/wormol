@@ -36,9 +36,10 @@
   justify-content: center;
   text-align: justify-all;
   width: 42vh;
-  height: 32vh;
+  height: 40vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  padding-bottom: 1rem;
   -webkit-overflow-scrolling: touch;
 }
 
