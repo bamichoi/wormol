@@ -39,8 +39,6 @@
   height: 40vh;
   overflow-y: scroll;
   overflow-x: hidden;
-  padding-bottom: 1rem;
-  -webkit-overflow-scrolling: touch;
 }
 
 .ita {
