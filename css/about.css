@@ -37,7 +37,7 @@
   text-align: justify-all;
   width: 42vh;
   height: 40vh;
-  overflow-y: scroll !important;
+  overflow-y: scroll;
   overflow-x: hidden;
 }
 
