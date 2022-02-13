@@ -21,7 +21,7 @@
   justify-content: flex-start;
 }
 
-.select_lang button:nth-child(1) {
+.select_lang button:nth-child(2) {
   color: white;
 }
 
@@ -38,7 +38,7 @@
   width: 42vh;
 }
 
-.ita {
+.en {
   display: none;
 }
 
