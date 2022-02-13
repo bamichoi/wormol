@@ -3,7 +3,7 @@ const itBtn = document.querySelector(".it_button");
 const itText = document.querySelector(".ita");
 const enText = document.querySelector(".en");
 
-let currentLang = "it";
+let currentLang = "en";
 
 const toggleLang = (e) => {
   const { value } = e.target;
