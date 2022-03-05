@@ -6,7 +6,7 @@ Official website of music artist Wormol
 https://wormol.000webhostapp.com/  
   
 
-## 💻사용 언어 Languages
+## 💻개발 언어 및 환경 Languages
   
 Frontend : HTML, SCSS, Javascript  
   
